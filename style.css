@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100vh;
+
+  transition: all .3s;
+}
+
+header {
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #C4C4CC;
+  font-size: 22px;
+  line-height: 100%;
+
+  transition: all .2s;
+}
+
+nav a:hover {
+  color: #FFF;
+  transform: scale(1.1);
+  font-weight: 700;
+  line-height: 100%
+}
+
+.active {
+  color: #FFF;
+  transform: scale(1.1);
+  font-weight: 700;
+  line-height: 100%
+}
+
+#app {
+  display: grid;
+  width: 100%;  
+  height: 100%;
+  margin-top: -126px;
+}
+
+#app h1 {
+  color:#E1E1E6;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 24px;
+}
+
+#app p {
+  color: #E1E1E6;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+#app #home {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app #home a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 24px;
+  width: max-content;
+  padding: 12px 32px;
+  background: none;
+  border-radius: 5px;
+  border: 3px solid #FFF;
+
+  cursor: pointer;
+  transition: all .2s;
+}
+
+#app #home a:hover {
+  background: #FFF;
+  color: #02799D;
+  font-weight: 700;
+}
+
+#app #universe {
+  align-self: center;
+  margin-left: 7.5%;
+  max-width: 650px; 
+}
+
+#app #exploration {
+  align-self: center;
+  margin-left: 7.5%;
+  max-width: 650px; 
+}
